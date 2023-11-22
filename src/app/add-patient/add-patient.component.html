@@ -1,0 +1,42 @@
+<div class="bgimg1">
+  <div class="bg">
+
+<div class=" col-md-5 offset-md-1">
+  <h3>Add Patient</h3>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label foe="patient_id">PatientId</label>
+      <input type="text" class="form-control" id="patient_id" [(ngModel)]="patient.patient_id" name="patient_id">
+    </div>
+
+    <div class="form-group">
+      <label for="patient_name">PatientName</label>
+      <input type="text" class="form-control" id="patient_name" [(ngModel)]="patient.patient_name" name="patient_name">
+    </div>
+
+    <div class="form-group">
+      <label for="age">age</label>
+      <input type="text" class="form-control" id="age" [(ngModel)]="patient.age" name="age">
+    </div>
+
+    <div class="form-group">
+      <label for="disease">Disease</label>
+      <input type="text" class="form-control" id="disease" [(ngModel)]="patient.disease" name="disease">
+    </div>
+
+    <div class="form-group">
+      <label for="gender">Gender</label>
+      <input type="text" class="form-control" id="gender" [(ngModel)]="patient.gender" name="gender">
+    </div>
+
+    <div class="form-group">
+      <label for="Phone_number">Phone_number</label>
+      <input type="text" class="form-control" id="Phone_number" [(ngModel)]="patient.Phone_number" name="Phone_number">
+    </div>
+
+    <button class="btn btn-success" type="submit">Submit</button>
+  </form>
+</div>
+  </div>
+</div>
+

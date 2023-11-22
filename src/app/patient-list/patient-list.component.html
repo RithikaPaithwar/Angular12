@@ -1,0 +1,31 @@
+<div class="bgimg1">
+ <div class="bg">
+<form>
+    <h2>Patient List</h2>
+    <table class="table table-striped table-hover">
+        <tr>
+            <th>patient_id</th>
+            <th>patient_name</th>
+            <th>age</th>
+            <th>disease</th>
+            <th>gender</th>
+            <th>Phone_number</th>
+        </tr>
+        <tbody>
+        <tr *ngFor="let patient of patients">
+            <td>{{patient.patient_id}}</td>
+            <td>{{patient.patient_name}}</td>
+            <td>{{patient.age}}</td>
+            <td>{{patient.disease}}</td>
+            <td>{{patient.gender}}</td>
+            <td>{{patient.Phone_number}}</td> 
+            <td><button class="btn btn-primary m-2" (click)="update(patient.patient_id)">Update</button></td>
+            <td><button class="btn btn-danger m-2" (click)="deletePatient(patient.patient_id)">Delete</button></td>
+        </tr>
+    </tbody>
+    </table>
+</form>
+</div>
+</div>
+
+

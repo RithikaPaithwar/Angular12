@@ -1,0 +1,29 @@
+<div class="bgimg1">
+    <div class="bg">
+
+<form>
+    <h2>Appointiment List</h2>
+    <table class="table table-striped table-hover">
+        <tr>
+            <th>appointment_id </th>
+            <th>appointment_date</th>
+            <th>appointment_time</th>
+            <th>schedule</th>
+            
+            
+        </tr>
+        <tr *ngFor="let appointment of appointments">
+            <td>{{appointment.appointment_id}}</td>
+            <td>{{appointment.appointment_date}}</td>
+            <td>{{appointment.appointment_time}}</td>
+            <td>{{appointment.schedule}}</td>
+            
+            <td><button class="btn btn-primary m-2" (click)="update(appointment.appointment_id)">Update</button></td>
+            <td><button class="btn btn-danger m-2" (click)="deleteAppointment(appointment.appointment_id)">Delete</button></td>
+           
+        </tr>
+    </table>
+</form>
+</div>
+</div>
+

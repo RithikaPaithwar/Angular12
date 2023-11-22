@@ -1,0 +1,32 @@
+
+<div class="bgimg1">
+    <div class="bg">
+  
+  
+  <form (ngSubmit)="onSubmit()" >
+      
+      <div class="mb-3">
+        <label for="userName" class="form-label  ">userName</label>
+        <input type="text" class="form-control  " style="width: 100vh;" id="userName" name="userName" [(ngModel)]="login.userName"  placeholder="enter userName">
+    </div>    
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" style="width: 100vh;"  class="form-control" id="email" name="email" placeholder="enter email" [(ngModel)]="login.email"  aria-describedby="emailHelp">
+          </div>
+
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control  " style="width: 100vh;" id="password" name="password" [(ngModel)]="login.password"  placeholder="enter password">
+      </div>
+
+     
+<div class="mb-3">
+  <input type="radio" name="userType" (change)=" onUserTypeChange('doctor')" value="doctor"> Doctor
+  <input type="radio" name="userType" (change)=" onUserTypeChange('patient')" value="patient"> Patient
+</div>
+
+      <button type="submit" class="btn btn-primary">LogIn</button>
+    </form>
+  </div>
+  </div>

@@ -1,0 +1,29 @@
+<div class="bgimg1">
+    <div class="bg">
+
+<form>
+    <h2>Feedback List</h2>
+    <table class="table table-striped table-hover">
+        <tr>
+            <th>Id</th>
+            <th>Comment</th>
+            <th>Rating</th>
+            
+        </tr>
+        <tbody>
+        <tr *ngFor="let feedback of feedbacks">
+            <td>{{feedback.id}}</td>
+            <td>{{feedback.comment}}</td>
+            <td>{{feedback.rating}}</td>
+           
+        
+            
+            <td><button class="btn btn-primary m-2" (click)="update(feedback.id)">Update</button></td>
+            <td><button class="btn btn-danger m-2" (click)="deleteFeedback(feedback.id)">Delete</button></td>  
+        </tr>
+    </tbody>
+    </table>
+</form>
+</div>
+</div>
+
